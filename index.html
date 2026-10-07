@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo online de productos de Carton Graf">
+  <title>Catálogo Carton Graf</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #eeeee7, #ffffff);
+      color: #333333;
+    }
+    .contenedor {
+      width: 90%;
+      max-width: 700px;
+      min-height: 100vh;
+      margin: auto;
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .logo {
+      display: block;
+      width: 100%;
+      max-width: 310px;
+      height: auto;
+      margin: 0 auto 25px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      color: #44443f;
+      font-size: 32px;
+      font-weight: 400;
+    }
+    .descripcion {
+      max-width: 550px;
+      margin: 0 auto 30px;
+      color: #666666;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .botones {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .boton {
+      display: block;
+      padding: 16px 20px;
+      border-radius: 8px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .boton:hover { opacity: 0.88; transform: translateY(-2px); }
+    .ver { background-color: #5d5d57; }
+    .descargar { background-color: #85857c; }
+    .whatsapp { background-color: #25d366; }
+    .aclaracion {
+      margin-top: 35px;
+      color: #777777;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    footer { margin-top: 45px; color: #777777; font-size: 13px; }
+    @media (max-width: 600px) {
+      .contenedor { padding: 35px 18px; }
+      .logo { max-width: 270px; }
+      h1 { font-size: 27px; }
+      .descripcion { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="contenedor">
+    <img src="logo-sibila.png" alt="Logo de Carton Graf" class="logo">
+    <h1>Catálogo de productos</h1>
+    <p class="descripcion">
+      Conocé nuestros productos y consultanos por disponibilidad,
+      colores, medidas, precios y formas de entrega.
+    </p>
+    <div class="botones">
+      <a href="catalogo-sibila.pdf" target="_blank" rel="noopener noreferrer" class="boton ver">Ver catálogo</a>
+      <a href="catalogo-sibila.pdf" download class="boton descargar">Descargar catálogo en PDF</a>
+      <a href="https://wa.me/5493415634358?text=Hola%2C%20vi%20el%20cat%C3%A1logo%20de%20Carton%20Graf%20y%20quiero%20consultar%20por%20un%20producto." target="_blank" rel="noopener noreferrer" class="boton whatsapp">Consultar por WhatsApp</a>
+    </div>
+    <p class="aclaracion">
+      Los precios y la disponibilidad se confirman al momento de realizar el pedido.
+    </p>
+    <footer>Carton Graf · Rosario, Santa Fe</footer>
+  </main>
+</body>
+</html>
